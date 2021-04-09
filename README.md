@@ -56,19 +56,18 @@ $ CREATE DATABASE wordpress;
 
 Em seguida, vamos configurar o WordPress pela própria interface do CMS. Para isso, digite o `ip` do seu servidor na url do navegador. E se tudo der certo aparecerá essa tela inicial do WordPress.
 
-(Print da tela)
+![imagemwordpress](img/wp-1.jpeg)
 
 Depois de clicar em "vamos lá", precisaremos configurar a conexão com o banco de dados. Essa é a hora de utilizar a database anteriormente criada. Neste caso, não é necessario alterar o host do banco de dados e o prefixo da tabela.
 
-(Print da tela)
+![imagemwordpress](img/wp-2.jpeg)
 
 Por fim, vamo configurar o nome do blog, o nome de usuário, senha e um email. Logo após isso, o blog estará em produção.
 
-(Print da tela)
+![imagemwordpress](img/wp-3.jpeg)
 
 Resultado:
-
-(Print da tela)
+![imagemwordpress](img/wp-4.jpeg)
 
 ### 2. Instalando o Moodle
 
@@ -104,16 +103,24 @@ $ sudo chwon sudo chown -R www-data ../moodledata
 
 Em seguida, vamos configurar o Moodle pela própria interface do AVA. Para isso, digite o `ip` do seu servidor na url do navegador. E se tudo der certo aparecerá essa tela inicial do Moodle.
 
-(print da tela)
+![imagemMoodle](img/moodle-1.jpeg)
 
-Instale a dependencia que faltar, no meu caso faltou as seguintes dependencias:
+Instale a dependência que faltar, no meu caso faltou as seguintes dependências:
 
 ```bash
 $ sudo apt-get install php-intl php-soap php-xmlrpc
 ```
 
+Precisa reiniciar o apache. Digite o seguinte comando para reiniciar o apache:
+```bash
+$ sudo systemctl restart apache2
+```
+Clique em continuar.
+
 Logo após aparece uma tela de instalação, mostrando todo o que foi instalado.
+
+![imagemMoodle](img/moodle-2.jpeg)
 
 Por fim, você vai registrar uma senha, login e o nome do site. Resultando na conclusão da instalação do AVA
 
-(print da tela)
+![imagemMoodle](img/moodle-3.jpeg)
