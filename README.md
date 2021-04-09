@@ -2,7 +2,7 @@
 
 Esse repositório é um tutorial para auxiliar você instalar WordPress e o Moodle.
 
-## Prerequisitos
+## Pré-requisitos
 
 Certifique-se de ter o LAMP(L inux, A pache, M ysql e P HP) instalado em seu computador.
 
